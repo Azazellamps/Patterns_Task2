@@ -32,6 +32,8 @@ public class DataGenerator {
     }
 
     public static String getRandomLogin() {
+        Faker faker = new Faker(new Locale("en"));
+        String login = faker.name().username();
         // TODO: добавить логику для объявления переменной login и задания её значения, для генерации
         //  случайного логина используйте faker
         return login;
